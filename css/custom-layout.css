@@ -961,8 +961,8 @@ img.services-header{
 /**************************/
 /**********PROJECTS********/
 /**************************/
-.project-banner{
-	background-image:url(../images/banners/project-banner.jpg);
+.travel-banner{
+	background-image:url(../images/banners/travel-banner.jpg);
 }
 /**************************/
 /***********ABOUT**********/
@@ -1521,6 +1521,9 @@ a.read-more{
 .login-p-banner{
 		background-image: url(../images/banners/login-p-banner.jpg);
 }
+.register-banner{
+	background-image: url(../images/banners/registration-banner.jpg);
+}
 .login-box h1{
 	margin:50px 0 20px;
 	font-size:69px;
@@ -1546,6 +1549,9 @@ a.read-more{
 	width:8%;
 	line-height:50px;
 }
+option{
+	color: #252930 !important;
+}
 .login-box .form-horizontal .form-control{
 	width:92%;
 	background:none;
@@ -1556,6 +1562,16 @@ a.read-more{
 	border:none;
 	padding:0;
 	box-shadow:none;
+}
+.form-control[readonly] {
+    background: none !important;
+    font-style: italic;
+    opacity: .9;
+    border: none !important;
+    font-weight: 700;
+    height: auto !important;
+	font-size: 16px;
+	text-align: center;
 }
 .login-box .form-horizontal .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
 	color:#fff;
@@ -2049,4 +2065,13 @@ video#bgvid {
 
 #success, #error {
 	display: none;
+}
+.dmbutton i.fa {
+    margin-right: 5px;
+}
+.links-banner{
+	background-image: url(../images/banners/links-banner.jpg);
+}
+.resources-banner{
+	background-image: url(../images/banners/resources-banner.jpg);
 }
