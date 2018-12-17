@@ -189,7 +189,7 @@ a:hover {
 }
 .nav-cta{
 	border: solid 1px #0367a6;
-    padding: 0;
+    padding: 0 !important;
     margin-left: 10px;
 	background-color: #0367a6;
 }
