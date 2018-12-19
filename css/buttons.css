@@ -46,3 +46,16 @@
 	background-color:#0f1923;
 	border-color:#0f1923;
 }
+.caption-heading .transparent-btn{
+	max-width: 200px;
+	margin: auto;
+	margin-top: 14px;
+	border: solid 1px #fff;
+	box-shadow: none;
+}
+.caption-heading .transparent-btn:hover{
+	background: #fff;
+	color: rgba(3,103,166,1);
+}
+
+
