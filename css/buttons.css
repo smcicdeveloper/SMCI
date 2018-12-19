@@ -53,7 +53,7 @@
 	border: solid 1px #fff;
 	box-shadow: none;
 }
-.caption-heading .transparent-btn:hover{
+.caption-heading .transparent-btn a:hover{
 	background: #fff;
 	color: rgba(3,103,166,1);
 }

@@ -528,7 +528,7 @@ a:hover {
 	display:table-cell;
 	vertical-align:middle;
 }
-.stat-count {
+.stat-count, .stat-count-static {
 	width: 76px;
 	height:79px;
 	color:#0f1923;
