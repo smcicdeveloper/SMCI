@@ -19,8 +19,6 @@
 <body class="about-page">
 
 <!-- Here is the DIV where we are loading page-loader.html, using javascript -->
-    <?php set_include_path( get_include_path() . PATH_SEPARATOR . $_SERVER['DOCUMENT_ROOT'] ); ?>
-    <? include('components/page-loader.html'); ?>
     <?php 
         $path = $_SERVER['DOCUMENT_ROOT'];
         $path .= "/SMCI/components/";
