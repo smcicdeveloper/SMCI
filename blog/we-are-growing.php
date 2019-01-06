@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SMCI Is Growing! - News - Southern Mutual Church Insurance Company</title>
 <link rel="icon" href="images/favicon.png" type="image/png">
-<link rel="stylesheet" href="css/all-stylesheets.css" type="text/css" />
+<link rel="stylesheet" href="/css/all-stylesheets.css" type="text/css" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">	
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
