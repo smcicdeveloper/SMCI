@@ -19,12 +19,12 @@
 <body class="about-page">
 
 <!-- Here is the DIV where we are loading page-loader.html, using javascript -->
-	<? include('components/page-loader.html'); ?>
+	<? include('/components/page-loader.html'); ?>
 <!--=========================================================================--> 
 	
 	
 <!-- Here is the DIV where we are loading navigation.html, using javascript -->
-	<? include('components/navigation.html'); ?>
+	<? include('/components/navigation.html'); ?>
 <!--========================================================================--> 
 	
 <!--=====================================--> 
@@ -153,7 +153,7 @@ smcins.com.</p>
   <!--main-contentbox--> 
 </div>
 <!-- Here is the DIV where we are loading footer.html, using javascript -->
-	<? include('components/footer.html'); ?>
+	<? include('/components/footer.html'); ?>
 <!--====================================================================--> 	
  
 
