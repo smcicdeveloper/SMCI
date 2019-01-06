@@ -21,6 +21,12 @@
 <!-- Here is the DIV where we are loading page-loader.html, using javascript -->
     <?php set_include_path( get_include_path() . PATH_SEPARATOR . $_SERVER['DOCUMENT_ROOT'] ); ?>
     <? include('components/page-loader.html'); ?>
+    <?php 
+        $path = $_SERVER['DOCUMENT_ROOT'];
+        echo "Path: " . $path;
+        $path .= "/common/page-loader.html";
+        include_once($path);
+    ?>
 <!--=========================================================================--> 
 	
 	
