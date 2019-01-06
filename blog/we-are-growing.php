@@ -19,12 +19,13 @@
 <body class="about-page">
 
 <!-- Here is the DIV where we are loading page-loader.html, using javascript -->
-	<? include('/components/page-loader.html'); ?>
+    <?php set_include_path( get_include_path() . PATH_SEPARATOR . $_SERVER['DOCUMENT_ROOT'] ); ?>
+    <? include('components/page-loader.html'); ?>
 <!--=========================================================================--> 
 	
 	
 <!-- Here is the DIV where we are loading navigation.html, using javascript -->
-	<? include('/components/navigation.html'); ?>
+	<? include('components/navigation.html'); ?>
 <!--========================================================================--> 
 	
 <!--=====================================--> 
