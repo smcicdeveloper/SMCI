@@ -24,7 +24,7 @@
     <?php 
         $path = $_SERVER['DOCUMENT_ROOT'];
         echo "Path: " . $path;
-        $path .= "SMCI/components/page-loader.html";
+        $path .= "/SMCI/components/page-loader.html";
         include_once($path);
     ?>
 <!--=========================================================================--> 
