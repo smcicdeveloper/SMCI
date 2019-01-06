@@ -220,10 +220,10 @@ $('#letter-button').click(function(){
 });
 
 //////// This is how we are loading in the external components ////////////
-$( "#page-loader" ).load( "../components/page-loader.html" );
-$( "#homepage-banner" ).load( "../components/homepage-banner.html" );
-$( "#navbar" ).load( "../components/navigation.html" );
-$( "#footer" ).load( "../components/footer.html" );
+$( "#page-loader" ).load( "components/page-loader.html" );
+$( "#homepage-banner" ).load( "components/homepage-banner.html" );
+$( "#navbar" ).load( "components/navigation.html" );
+$( "#footer" ).load( "components/footer.html" );
 
 $(function(){
     var current = location.pathname;
