@@ -23,15 +23,14 @@
     <? include('components/page-loader.html'); ?>
     <?php 
         $path = $_SERVER['DOCUMENT_ROOT'];
-        echo "Path: " . $path;
-        $path .= "/SMCI/components/page-loader.html";
-        include_once($path);
+        $path .= "/SMCI/components/";
+        include_once($path . "page-loader.html");
     ?>
 <!--=========================================================================--> 
 	
 	
 <!-- Here is the DIV where we are loading navigation.html, using javascript -->
-	<? include('components/navigation.html'); ?>
+	<? include_once($path . 'navigation.html'); ?>
 <!--========================================================================--> 
 	
 <!--=====================================--> 
@@ -160,7 +159,7 @@ smcins.com.</p>
   <!--main-contentbox--> 
 </div>
 <!-- Here is the DIV where we are loading footer.html, using javascript -->
-	<? include('/components/footer.html'); ?>
+<? include_once($path . 'footer.html'); ?>
 <!--====================================================================--> 	
  
 
