@@ -63,7 +63,7 @@
       <div class="row text-center">
 
         <div class="spacer"></div>
-            <select id="agent-filter">
+            <select id="state-select" class="agent-filter">
                 <option value="All">All States </option>
                 <option value="South Carolina">South Carolina</option>
                 <option value="North Carolina">North Carolina</option>
@@ -129,7 +129,7 @@ $.getJSON( "data/agents.json", function( data ) {
 
 
 
-jQuery( "#agent-filter" ).change(function() {
+jQuery( ".agent-filter" ).change(function() {
     var states = jQuery('#state-select').val();
     var counties = jQuery('#county-select').val();
   
