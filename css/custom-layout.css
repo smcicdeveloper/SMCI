@@ -286,14 +286,14 @@ a:hover {
 	margin: 0 0 8px;
 }
 @media screen and (min-height: 990px){
-	@media screen and (max-height: 1280px){ 
+	
 		.quick-hover-title{
 			display: none;
 		}
 		.services-info .services-infoBox .btn1 a {
 			padding: 8px 19px;
 		}
-	}
+	
 } 
 .services-info .services-infoBox .btn1 {
 	display: inline-block;
