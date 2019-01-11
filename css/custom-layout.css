@@ -293,6 +293,9 @@ a:hover {
 		.services-info .services-infoBox .btn1 a {
 			padding: 8px 19px;
 		}
+		.services-info .services-infoBox {
+			padding: 0 10px;
+		}
 	}
 } 
 .services-info .services-infoBox .btn1 {
