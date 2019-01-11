@@ -100,14 +100,19 @@
 $.getJSON( "data/agents.json", function( data ) {
   var items = [];
   $.each( data['data']['agents'], function( key, val ) {
-      $("#agents").append("<div class='col-lg-3 col-md-3 col-sm-6 col-xs-12' data-state='" + key + "'><aside class='director-box col-lg-12 col-md-12 col-sm-12 col-xs-12'>"+
-            "<figure class='director-img'><img alt='director-img' src='" + val['0']['photo'] + "'></figure>"+
-            "<div class='director-info text-left'>"+
-            "<h3>" + val['0']['photo'] + "</h3>"+
-            "<p><a href='mailto:" + val['0']['email']+ "'>" + val['0']['email'] + "</a></p>"+
-            "</div>"+
+      $("#agents").append("<div class='col-lg-3 col-md-3 col-sm-6 col-xs-12' data-state='" + key + "'>"+
+            "<aside class='director-box col-lg-12 col-md-12 col-sm-12 col-xs-12'>"+
+                "<figure class='director-img'>"+
+                    "<img alt='director-img' src='" + val['0']['photo'] + "'>"+
+                "</figure>"+
+                "<div class='director-info text-left'>"+
+                    "<h3>" + val['0']['name'] + "</h3>"+
+                    "<h5>" + key + "</h5>"+
+                    "<p><a href='mailto:" + val['0']['email']+ "'>" + val['0']['email'] + "</a></p>"+
+                    "<p><a href='tel:" + val['0']['phone']+ "'>" + val['0']['phone'] + "</a></p>"+
+                "</div>"+
             "</aside>"+
-            "</div>");
+        "</div>");
   });
 });
 
