@@ -1,3 +1,8 @@
+@media screen and (max-width: 1200px){
+	#home-link{
+		display: none;
+	}
+}
 @media screen and (max-width: 1024px){
 
 .services-info .services-infoBox .btn1 {
@@ -159,6 +164,10 @@
 }
 
 @media screen and (max-width: 991px){
+
+.nav-cta{
+	margin-left: 0;
+}	
 
 .banner-text{
 

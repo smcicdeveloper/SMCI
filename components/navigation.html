@@ -20,10 +20,44 @@
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <div class="row">
                   <ul id="nav-list" class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="resources.html">Resources</a></li>
+                    <li id="home-link"><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                      <a href="about.html">About us<i class="fa fa-angle-down"></i></a>
+                      <div class="dropdown-menu regular-font">
+                          <ul>
+                            <li><a href="about.html"><i class="fa fa-stop"></i> Our History</a></li>
+                            <li><a href="about.html#letter-from-president"><i class="fa fa-stop"></i>Letter From The President</a></li>
+                            <li><a href="about.html#directors"><i class="fa fa-stop"></i>Report A Claim</a></li>
+                          </ul>
+                            <!--dropdown-menu-->
+                        </div>
+                    </li>
+                    <li  class="dropdown">
+                      <a href="products.html">Products<i class="fa fa-angle-down"></i></a>
+                        <div class="dropdown-menu regular-font">
+                          <ul>
+                            <li><a href="products.html?tab=property-and-liability"><i class="fa fa-stop"></i>Property Liability</a></li>
+                            <li><a href="products.html?tab=automobile"><i class="fa fa-stop"></i>Business Automobile</a></li>
+                            <li><a href="products.html?tab=workers-comp"><i class="fa fa-stop"></i>Workers Compensation</a></li>
+                            <li><a href="products.html?tab=umbrella"><i class="fa fa-stop"></i>Umbrella Liability</a></li>
+                          </ul>
+                            <!--dropdown-menu-->
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                      <a href="resources.html">Resources<i class="fa fa-angle-down"></i></a>
+                        <div class="dropdown-menu regular-font"> 
+                          <ul>
+                            <li><a href="resources.html?tab=church-security"><i class="fa fa-stop"></i>Church Security</a></li>
+                            <li><a href="resources.html?tab=candle-safety"><i class="fa fa-stop"></i>Candle Safety</a></li>
+                            <li><a href="resources.html?tab=child-protection"><i class="fa fa-stop"></i>Child Protection</a></li>
+                            <li><a href="resources.html?tab=helpful-links"><i class="fa fa-stop"></i>Helpful Links</a></li>
+                            <li><a href="resources.html?tab=motor-vehicle-reports"><i class="fa fa-stop"></i>Motor Vehicle Reports</a></li>
+                            <li><a href="resources.html?tab=gatekeeper-newsletter"><i class="fa fa-stop"></i>Gatekeeper Newsletter</a></li>
+                          </ul>
+                            <!--dropdown-menu-->
+                        </div>
+                    </li>
                     <li><a href="contact.html">Contact</a></li>
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding: 9px 20px;">More<i class="fa fa-angle-down"></i></a>
