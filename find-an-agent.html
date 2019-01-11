@@ -63,11 +63,22 @@
       <div class="row text-center">
 
         <div class="spacer"></div>
-        
-          <div class="row" id="agents">
-           
-            <!--row--> 
-          </div>
+            <select id="agent-filter">
+                <option value="All">All States </option>
+                <option value="South Carolina">South Carolina</option>
+                <option value="North Carolina">North Carolina</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Tennessee">Tennessee</option>
+                <option value="Virgina">Virgina</option>
+            </select>
+        <div id="gallery-content" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="gallery-content-center" class="isotope" style="position: relative; overflow: hidden; height: 1350px;">
+                  <ul id="agents">
+                  </ul>
+                  <!--gallery-content-center--> 
+                </div>
+                <!--gallery-content--> 
+              </div>
           <!--col-lg-12--> 
         </div>
         <!--row--> 
@@ -100,9 +111,9 @@
 $.getJSON( "data/agents.json", function( data ) {
   var items = [];
   $.each( data['data']['agents'], function( key, val ) {
-      $("#agents").append("<div class='col-lg-3 col-md-3 col-sm-6 col-xs-12' data-state='" + key + "'>"+
-            "<aside class='director-box col-lg-12 col-md-12 col-sm-12 col-xs-12'>"+
-                "<figure class='director-img'>"+
+      $("#agents").append("<li class='col-lg-4 col-md-4 col-sm-6 col-xs-12 isotope-item' data-state='" + key + "' data-county='" + val['0']['county']  + "'>"+
+            "<div class='project-details text-left col-lg-12 col-md-12 col-sm-12 col-xs-12'>"+
+                "<figure>"+
                     "<img alt='director-img' src='" + val['0']['photo'] + "'>"+
                 "</figure>"+
                 "<div class='director-info text-left'>"+
@@ -111,27 +122,24 @@ $.getJSON( "data/agents.json", function( data ) {
                     "<p><a href='mailto:" + val['0']['email']+ "'>" + val['0']['email'] + "</a></p>"+
                     "<p><a href='tel:" + val['0']['phone']+ "'>" + val['0']['phone'] + "</a></p>"+
                 "</div>"+
-            "</aside>"+
-        "</div>");
+            "</div>"+
+        "</li>");
   });
 });
 
 
 
-
-jQuery( "#vip-filter" ).change(function() {
-    var rooms = jQuery('#room-select').val();
-    var occ = jQuery('#occ-select').val();
-    var resort = jQuery('#resort-select').val();
+jQuery( "#agent-filter" ).change(function() {
+    var states = jQuery('#state-select').val();
+    var counties = jQuery('#county-select').val();
   
       function setAlbum(resort, occ, rooms) {  
-        jQuery('.vip-avail').each(function() {
-             var dataRooms = jQuery( this ).data( "rooms" );
-             var dataOcc = jQuery( this ).data( "occ" );
-             var dataResort = jQuery( this ).data( "resort" ); 
+        jQuery('.isotope-item').each(function() {
+             var county = jQuery( this ).data( "county" );
+             var state = jQuery( this ).data( "state" );
           
           
-          if((rooms > dataRooms) || (occ > dataOcc) || ((resort != "All") && (resort != dataResort))){
+          if((states == state)){
             jQuery( this).hide("fast");
           } else {
             jQuery( this).show("fast");
