@@ -133,7 +133,8 @@ jQuery( "#agent-filter" ).change(function() {
     var states = jQuery('#state-select').val();
     var counties = jQuery('#county-select').val();
   
-      function setAlbum(resort, occ, rooms) {  
+      function setAlbum(states, counties) { 
+          console.log("States:" + states) 
         jQuery('.isotope-item').each(function() {
              var county = jQuery( this ).data( "county" );
              var state = jQuery( this ).data( "state" );
@@ -149,7 +150,7 @@ jQuery( "#agent-filter" ).change(function() {
 
     }
 
-  setAlbum(resort, occ, rooms);
+  setAlbum(states, counties);
 })
 </script>
 </body>
