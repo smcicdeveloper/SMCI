@@ -1,0 +1,13 @@
+
+
+{ "data": {
+    "agents": {
+        "South Carolina": [
+            {"County":"Beaufort", "Name":"Chris Rosenberry", "email":"chris@fifthstoryinteractive", "photo": "images/board/david-charpia.jpg"}
+        ],
+        "Virgina": [
+            {"County":"All", "Name":"Jim Ferguson", "email":"jferguson@smcins.com", "photo": "images/blog/employee-spotlight/jim-ferguson-small.jpg"}
+        ]
+    }
+}
+}
