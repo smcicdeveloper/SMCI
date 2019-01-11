@@ -140,7 +140,7 @@ jQuery( ".agent-filter" ).change(function() {
              var state = jQuery( this ).data( "state" );
           
           
-          if((states == state)){
+          if((states == state) || (states == "All")){
             jQuery( this).show("fast");
           } else {
             jQuery( this).hide("fast");
