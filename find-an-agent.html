@@ -63,50 +63,9 @@
       <div class="row text-center">
 
         <div class="spacer"></div>
-        <div class="border-top col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-              <aside class="contact-info">
-                <figure class="fa fa-envelope pull-left"></figure>
-                <div class="contact-links regular-font pull-left">
-                  <div> <a href="mailto:info@smcins.com">info@smcins.com</a><br>
-                    <a href="mailto:claims@smcins.com">claims@smcins.com</a> </div>
-                  <!--contact-links--> 
-                </div>
-                <!--contact-info--> 
-              </aside>
-              <!--col-lg-4--> 
-            </div>
-            <aside class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-              <aside class="contact-info">
-                <figure class="fa  fa-phone pull-left"></figure>
-                <div class="contact-links regular-font pull-left">
-                  <div>
-                    <a href="tel:8037769365">803.776.9365</a><br>
-                    <a href="tel:8009225332">800.922.5332</a><br>
-                    803.776.4260 (fax)
-                  </div>
-                  <!--contact-links--> 
-                </div>
-                <!--contact-info--> 
-              </aside>
-              <!--col-lg-4--> 
-            </aside>
-            <aside class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-              <aside class="contact-info">
-                <figure class="fa  fa-map-marker pull-left"></figure>
-                <div class="contact-links regular-font pull-left">
-                  <div>
-                    <p>P.O. Box 9346<br>
-                      201 Greenlawn Drive<br>
-                      Columbia, SC 29290</p>
-                  </div>
-                  <!--contact-links--> 
-                </div>
-                <!--contact-info--> 
-              </aside>
-              <!--col-lg-4--> 
-            </aside>
+        
+          <div class="row" id="agents">
+           
             <!--row--> 
           </div>
           <!--col-lg-12--> 
@@ -140,15 +99,19 @@
 
 $.getJSON( "data/agents.json", function( data ) {
   var items = [];
-  $.each( data, function( key, val ) {
-    items.push( "<li id='" + key + "'>" + val + "</li>" );
+  $.each( data['data']['agents'], function( key, val ) {
+      $("#agents").append("<div class='col-lg-3 col-md-3 col-sm-6 col-xs-12' data-state='" + key + "'><aside class='director-box col-lg-12 col-md-12 col-sm-12 col-xs-12'>"+
+            "<figure class='director-img'><img alt='director-img' src='" + val['0']['photo'] + "'></figure>"+
+            "<div class='director-info text-left'>"+
+            "<h3>" + val['0']['photo'] + "</h3>"+
+            "<p><a href='mailto:" + val['0']['email']+ "'>" + val['0']['email'] + "</a></p>"+
+            "</div>"+
+            "</aside>"+
+            "</div>");
   });
- 
-  $( "<ul/>", {
-    "class": "my-new-list",
-    html: items.join( "" )
-  }).appendTo( "body" );
 });
+
+
 
 
 jQuery( "#vip-filter" ).change(function() {
