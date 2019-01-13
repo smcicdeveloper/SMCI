@@ -555,7 +555,7 @@ a:hover {
 	background-size:contain
 }
 /******************************/
-/************directorS**********/
+/********** directors *********/
 /******************************/
 .director-box{
 	overflow: hidden;
@@ -593,6 +593,48 @@ a:hover {
 .director-img img {
     width: 100%;
 }
+
+/******************************/
+/*********** agents ***********/
+/******************************/
+
+.agents-image{
+	object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+	height: 350px;
+	margin-bottom: -20px;
+}
+.agent-info{
+	width: 90%;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 400;
+    padding: 0 !important;
+}
+.agent-info figure{
+	font-size: 12px;
+    width: 25px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #0367a6;
+    margin: 0 20px 0 0 !important;
+    color: #fff;
+}
+.agent-state{
+    margin: -10px 0px 40px;
+    text-align: right;
+    background: #0367a6;
+    position: relative;
+    padding: 0px 10px 0 20px;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: -3px 4px 15px 0px #000;
+}
+
 .social-icons{
 	right:20px;
 	bottom:20px;

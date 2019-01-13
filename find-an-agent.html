@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contact Southern Mutual Church Insurance Company</title>
+<title>Find An Agent Southern Mutual Church Insurance Company</title>
 <link rel="icon" href="images/favicon.png" type="image/png">
 <link rel="stylesheet" href="css/all-stylesheets.css" type="text/css" />
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -35,11 +35,11 @@
         <div class="row">
           <div class="sub-banner-text darkBlueBg regular-font col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div>
-              <h1>contact us</h1>
+              <h1>Find An Agent</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod <br>tempor aboreet dolore magna aliqua.</p>
               <ol class="breadcrumb">
                 <li><a href="https://smcins.com">Home</a></li>
-                <li class="active">contact us</li>
+                <li class="active">Find An Agent</li>
               </ol>
             </div>
             <!--sub-banner-text--> 
@@ -122,14 +122,17 @@ $.getJSON( "data/agents.json", function( data ) {
       $("#agents").append("<li class='col-lg-4 col-md-4 col-sm-6 col-xs-12 isotope-item' data-state='" + key + "' data-county='" + val['0']['county']  + "'>"+
             "<div class='project-details text-left col-lg-12 col-md-12 col-sm-12 col-xs-12'>"+
                 "<figure>"+
-                    "<img alt='director-img' src='" + val['0']['photo'] + "'>"+
+                    "<img class='agent-image' alt='agent image' src='" + val['0']['photo'] + "'>"+
                 "</figure>"+
-                "<div class='director-info text-left'>"+
-                    "<h3>" + val['0']['name'] + "</h3>"+
-                    "<h5>" + key + "</h5>"+
-                    "<p><a href='mailto:" + val['0']['email']+ "'>" + val['0']['email'] + "</a></p>"+
-                    "<p><a href='tel:" + val['0']['phone']+ "'>" + val['0']['phone'] + "</a></p>"+
+                "<span class='agent-state'>" + key + "</span>"+
+                "<div class='clearfix'></div>"+
+                "<aside class='agent-info text-left'>"+
+                "<figure class='fa fa-envelope pull-left'></figure>"+
+                "<div class='contact-links regular-font pull-left'>"+
+                "<div><a href='mailto:" + val['0']['email']+ "'>" + val['0']['email'] + "</a><br>"+
+                "<a href='tel:" + val['0']['phone']+ "'>" + val['0']['phone'] + "</a></div>"+
                 "</div>"+
+                "</aside>"+
             "</div>"+
         "</li>");
   });
