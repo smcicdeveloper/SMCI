@@ -3,7 +3,7 @@
 { "data": {
     "agents": {
         "South Carolina": [
-            {"county":"Lexington", "name":"David Weiss", "email":"dweiss@smcins.com", "phone": "800-922-5332", "photo": "images/agents/placeholder.jpg", "address": "201 Greenlawn Drive", "city": "Columbia", "zip": "29290", "agency": "Southern Mutual Church Insurance (David Weiss)"}
+            {"county":"Lexington", "name":"David Weiss", "email":"dweiss@smcins.com", "phone": "800-922-5332", "photo": "images/agents/placeholder.jpg", "address": "201 Greenlawn Drive", "city": "Columbia", "zip": "29290", "agency": "Southern Mutual Church Insurance (David Weiss)"},
             {"county":"Abbeville", "name":"Jim Ellis", "email":"jellis@smcins.com", "phone": "800-922-5332", "photo": "images/agents/placeholder.jpg", "address": "201 Greenlawn Drive", "city": "Columbia", "zip": "29290",  "agency": "Southern Mutual Church Insurance (Jim Ellis)"}
         ],
         "Virgina": [
