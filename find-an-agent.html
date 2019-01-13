@@ -125,11 +125,10 @@ $.getJSON( "data/agents.json", function( data ) {
                 "<span class='agent-state'>" + key + "</span>"+
                 "<div class='clearfix'></div>"+
                 "<aside class='agent-info text-left'>"+
-                "<figure class='fa fa-envelope pull-left'></figure>"+
+                "<h3>" + val['0']['name'] + "</h3>"+                
                 "<div class='contact-links regular-font pull-left'>"+
-                "<h3>" + val['0']['name'] + "</h3>"+
-                "<div><a href='mailto:" + val['0']['email']+ "'>" + val['0']['email'] + "</a><br>"+
-                "<a href='tel:" + val['0']['phone']+ "'>" + val['0']['phone'] + "</a></div>"+
+                "<div><figure class='fa fa-envelope pull-left'></figure><a href='mailto:" + val['0']['email']+ "'>" + val['0']['email'] + "</a></div><br>"+
+                "<div><figure class='fa fa-phone pull-left'></figure><a href='tel:" + val['0']['phone']+ "'>" + val['0']['phone'] + "</a></div>"+
                 "</div>"+
                 "</aside>"+
             "</div>"+
