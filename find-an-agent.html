@@ -126,10 +126,10 @@ $.getJSON( "data/agents.json", function( data ) {
                 "<span class='agent-state'>" + key + "</span>"+
                 "<div class='clearfix'></div>"+
                 "<aside class='agent-info text-left'>"+
-                "<h3>" + val['0']['name'] + "</h3><span>" + val['0']['agency'] + "</span>" +  
+                "<h3>" + val['0']['name'] + "</h3><span>" + val['0']['agency'] + "</span><hr>" +  
                 "<div class='agent-details'><figure class='fa fa-envelope pull-left'></figure><a href='mailto:" + val['0']['email']+ "'>" + val['0']['email'] + "</a></div><br>"+              
-                "<div class='agent-details'><figure class='fa fa-phone pull-left'></figure><a href='tel:" + val['0']['phone']+ "'>" + val['0']['phone'] + "</a></div>"+
-                "<div class='agent-details'><figure class='fa fa-map-marker pull-left'></figure><a href='tel:" + val['0']['address']+ "'><br>" + val['0']['city'] + ", "+ key + ", " +  val['0']['zip'] + " </a></div>"+
+                "<div class='agent-details'><figure class='fa fa-phone pull-left'></figure><a href='tel:" + val['0']['phone']+ "'>" + val['0']['phone'] + "</a></div><br>"+
+                "<div class='agent-details'><figure class='fa fa-map-marker pull-left'></figure>" + val['0']['address']+ "<br>" + val['0']['city'] + ", "+ key + ", " +  val['0']['zip'] + "</div>"+
                 "</aside>"+
             "</div>"+
         "</li>");

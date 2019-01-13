@@ -7,7 +7,7 @@
             {"county":"Abbeville", "name":"Jim Ellis", "email":"jellis@smcins.com", "phone": "800-922-5332", "photo": "images/agents/placeholder.jpg", "address": "201 Greenlawn Drive", "city": "Columbia", "zip": "29290",  "agency": "Southern Mutual Church Insurance (Jim Ellis)"}
         ],
         "Virgina": [
-            {"county":"All", "name":"Jim Ferguson", "email":"jferguson@smcins.com", "phone": "123-123-1234", "photo": "images/agents/jim-ferguson.jpg", "address": "201 Greenlawn Drive", "city": "Columbia", "zip": "29290"}
+            {"county":"All", "name":"Jim Ferguson", "email":"jferguson@smcins.com", "phone": "123-123-1234", "photo": "images/agents/jim-ferguson.jpg", "address": "201 Greenlawn Drive", "city": "Columbia", "zip": "29290", "agency": ""}
         ]
     }
 }

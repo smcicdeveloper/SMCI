@@ -622,11 +622,19 @@ a:hover {
     margin: 0 20px 0 0 !important;
     color: #fff;
 }
+.agent-info h3 {
+    margin-bottom: 0;
+}
+
 .agent-image .agent-details{
 	width: 100%;
     display: inline-flex;
     font-size: 18px;
     line-height: 27px;
+}
+.agent-details a {
+    font-size: 14px;
+    line-height: 20px;
 }
 .agent-state{
     margin: -10px 0px 40px;
