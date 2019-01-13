@@ -118,21 +118,22 @@
 <script>
 
 $.getJSON( "data/agents.json", function( data ) {
-  var items = [];
+  var items = [], i = 0;
   $.each( data['data']['agents'], function( key, val ) {
-      $("#agents").append("<li class='col-lg-4 col-md-4 col-sm-6 col-xs-12 isotope-item' data-state='" + key + "' data-county='" + val['0']['county']  + "'>"+
+      $("#agents").append("<li class='col-lg-4 col-md-4 col-sm-6 col-xs-12 isotope-item' data-state='" + key + "' data-county='" + val[i]['county']  + "'>"+
             "<div class='project-details text-left col-lg-12 col-md-12 col-sm-12 col-xs-12'>"+
-              "<img class='agent-image' alt='agent image' src='" + val['0']['photo'] + "'>"+
+              "<img class='agent-image' alt='agent image' src='" + val[i]['photo'] + "'>"+
                 "<span class='agent-state'>" + key + "</span>"+
                 "<div class='clearfix'></div>"+
                 "<aside class='agent-info text-left'>"+
-                "<h3>" + val['0']['name'] + "</h3><span>" + val['0']['agency'] + "</span><hr>" +  
-                "<div class='agent-details'><figure class='fa fa-envelope pull-left'></figure><a href='mailto:" + val['0']['email']+ "'>" + val['0']['email'] + "</a></div><br>"+              
-                "<div class='agent-details'><figure class='fa fa-phone pull-left'></figure><a href='tel:" + val['0']['phone']+ "'>" + val['0']['phone'] + "</a></div><br>"+
-                "<div class='agent-details'><figure class='fa fa-map-marker pull-left'></figure>" + val['0']['address']+ "<br>" + val['0']['city'] + ", "+ key + ", " +  val['0']['zip'] + "</div>"+
+                "<h3>" + val[i]['name'] + "</h3><span>" + val[i]['agency'] + "</span><hr>" +  
+                "<div class='agent-details'><figure class='fa fa-envelope pull-left'></figure><a href='mailto:" + val[i]['email']+ "'>" + val[i]['email'] + "</a></div><br>"+              
+                "<div class='agent-details'><figure class='fa fa-phone pull-left'></figure><a href='tel:" + val[i]['phone']+ "'>" + val[i]['phone'] + "</a></div><br>"+
+                "<div class='agent-details'><figure class='fa fa-map-marker pull-left'></figure>" + val[i]['address']+ "<br>" + val[i]['city'] + ", "+ key + ", " +  val[i]['zip'] + "</div>"+
                 "</aside>"+
             "</div>"+
         "</li>");
+        i++;
   });
 });
 
