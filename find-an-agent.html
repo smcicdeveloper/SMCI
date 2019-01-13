@@ -121,9 +121,7 @@ $.getJSON( "data/agents.json", function( data ) {
   $.each( data['data']['agents'], function( key, val ) {
       $("#agents").append("<li class='col-lg-4 col-md-4 col-sm-6 col-xs-12 isotope-item' data-state='" + key + "' data-county='" + val['0']['county']  + "'>"+
             "<div class='project-details text-left col-lg-12 col-md-12 col-sm-12 col-xs-12'>"+
-                "<figure>"+
-                    "<img class='agent-image' alt='agent image' src='" + val['0']['photo'] + "'>"+
-                "</figure>"+
+              "<img class='agent-image' alt='agent image' src='" + val['0']['photo'] + "'>"+
                 "<span class='agent-state'>" + key + "</span>"+
                 "<div class='clearfix'></div>"+
                 "<aside class='agent-info text-left'>"+

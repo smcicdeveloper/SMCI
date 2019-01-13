@@ -598,7 +598,7 @@ a:hover {
 /*********** agents ***********/
 /******************************/
 
-.agents-image{
+.agent-image{
 	object-fit: cover;
     object-position: bottom;
     width: 100%;
