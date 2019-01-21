@@ -903,8 +903,14 @@ a:hover {
 	margin:0;
 }
 .copyright-section{
-	float:right;
-	width:25%;
+	text-align: center;
+    line-height: 20px;
+    min-height: 20px;
+    display: block;
+    background: #337ab7;
+    color: white;
+    letter-spacing: .5px;
+    font-weight: 100;
 }
 .copyright-section .logo{
 	margin:0 0 16px;
