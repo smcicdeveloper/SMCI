@@ -25,6 +25,9 @@ h6 {
     letter-spacing: .5px;
 
 }
+.recent-news-text h6 {
+    visibility: hidden;
+}
 /*p{
 	margin:0;
 }*/
