@@ -447,9 +447,9 @@ a:hover {
 /*#letter-president, #letter-remainder{
 	transition: 2s;
 }*/
-/*#letter-remainder{
-	height: 500px;
-}*/
+#letter-remainder{
+	width: 720px;
+}
 #letter-button{
 	width: 200px;
 	margin: 0 0 100px 0;
